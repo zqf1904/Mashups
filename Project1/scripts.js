@@ -40,7 +40,7 @@ function getEbay(maxprice){
 };
 
 function getRate(){
-	var rateURL = "https://apilayer.net/api/live&currencies=EUR,GBP,CAD,CNY&source=USD?access_key=05a9c2cdaaebf823bea08e9293cf8952";
+	var rateURL = "http://apilayer.net/api/live&currencies=EUR,GBP,CAD,CNY&source=USD?access_key=05a9c2cdaaebf823bea08e9293cf8952";
 	$.ajax({
 		url: rateURL,
 		type: 'GET',
