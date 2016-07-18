@@ -13,7 +13,7 @@ function printEbay(theName, theURL, theImg, thePrice){
 };
 
 function getEbay(maxprice){
-	var ebayURL = "http://svcs.ebay.com/services/search/FindingService/v1?OPERATION-NAME=findItemsByCategory&SERVICE-VERSION=1.0.0&SECURITY-APPNAME=QifanZha-Currency-PRD-499eca255-8b58deb1&GLOBAL-ID=EBAY-US&RESPONSE-DATA-FORMAT=JSON&REST-PAYLOAD&categoryId=293&paginationInput.entriesPerPage=100&sortOrder=PricePlusShippingHighest&itemFilter.name=MaxPrice&";
+	var ebayURL = "https://svcs.ebay.com/services/search/FindingService/v1?OPERATION-NAME=findItemsByCategory&SERVICE-VERSION=1.0.0&SECURITY-APPNAME=QifanZha-Currency-PRD-499eca255-8b58deb1&GLOBAL-ID=EBAY-US&RESPONSE-DATA-FORMAT=JSON&REST-PAYLOAD&categoryId=293&paginationInput.entriesPerPage=100&sortOrder=PricePlusShippingHighest&itemFilter.name=MaxPrice&";
 	var pricefilter = "itemFilter.value=" + maxprice;
 	ebayURL += pricefilter;
 	$.ajax({
@@ -40,7 +40,7 @@ function getEbay(maxprice){
 };
 
 function getRate(){
-	var rateURL = "http://apilayer.net/api/live&currencies=EUR,GBP,CAD,CNY&source=USD?access_key=05a9c2cdaaebf823bea08e9293cf8952";
+	var rateURL = "https://apilayer.net/api/live&currencies=EUR,GBP,CAD,CNY&source=USD?access_key=05a9c2cdaaebf823bea08e9293cf8952";
 	$.ajax({
 		url: rateURL,
 		type: 'GET',
@@ -67,7 +67,7 @@ function getNYTimesData(){
 	var month = date7DaysAgo.getMonth()+1;
 	var day = date7DaysAgo.getDate();
 	var searchDate = date7DaysAgo.getFullYear() + (month<10 ? '0' : '') + month + (day<10 ? '0' : '') + day;
-	var nyTimesURL = "http://api.nytimes.com/svc/search/v2/articlesearch.json?q=currency&page=0&sort=newest&api-key=";
+	var nyTimesURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=currency&page=0&sort=newest&api-key=";
 	var myNYTimesAPIKey = "f0278857e7474dfe82793aa1c2a880fc";
 	var nyTimesDate = "&begin_date=" + searchDate;
 	var nyTimesReqURL = nyTimesURL + myNYTimesAPIKey + nyTimesDate;
@@ -99,7 +99,7 @@ function getNews(theCurrency){
 	var month = date7DaysAgo.getMonth()+1;
 	var day = date7DaysAgo.getDate();
 	var searchDate = date7DaysAgo.getFullYear() + (month<10 ? '0' : '') + month + (day<10 ? '0' : '') + day;
-	var nyTimesURL = "http://api.nytimes.com/svc/search/v2/articlesearch.json?page=0&sort=newest&api-key=";
+	var nyTimesURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?page=0&sort=newest&api-key=";
 	var myNYTimesAPIKey = "f0278857e7474dfe82793aa1c2a880fc";
 	var nyTimesDate = "&begin_date=" + searchDate;
 	var searchNews = "&q=currency+" + theCurrency;
