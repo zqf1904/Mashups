@@ -1,0 +1,179 @@
+body{
+    font-family: Helvetica;
+    font-size: 14px;
+    background-color: #bee;
+}
+
+.content{
+    border: 20px solid #bee;
+    width: 80%;
+    margin: 0 auto; 
+    min-height: 790px;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+h3, h1{
+    display: table-caption;
+}
+
+h1{
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+
+h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.Table{
+    display: table;
+    width: 550px;
+    float: left;
+}
+
+.Row{
+    display: table-row;
+}
+
+.Cell{
+    display: table-cell;
+    padding-right: 15px;
+    vertical-align: top;
+    height: 65px;
+}
+
+.result{
+    text-align: right;
+}
+
+.Name{
+    text-align: right;
+    font-family: arial;
+    font-size: 12px;
+    line-height: 3px;
+    color: grey;
+}
+
+.Flag{
+    font-family: arial;
+    font-size: 12px;
+    line-height: 0px;
+}
+
+input{
+    text-align: right;
+    font-size: 13px;
+}
+
+.Title{
+    font-family: arial;
+    font-weight: bold;
+    font-size: 13px;
+    height: 35px;
+}
+
+#date{
+    position: absolute;
+    margin-top: 405px;
+    margin-left: 110px;
+    font-size: 12px;
+    font-family: arial;
+    color: grey;
+}
+
+.ebay{
+    position: absolute;
+    width:550px;
+    margin-top: 434px;
+    font-family: arial;
+}
+
+.ebayT{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.ebaylist{
+    width: 45%;
+    float: left;
+    padding-left: 2%;
+    height: 190px;
+    margin-bottom: 5px;
+}
+
+.ebayimg{
+    width: 50%;
+    float: right;
+    margin-right: 25px;
+    max-height: 130px;
+}
+
+.ebaytitle{
+    margin-top: 0px;
+    margin-left: 0px;
+    height: 48px;
+}
+
+.ebayc{
+    margin-bottom: 0px;
+}
+
+.price{
+    float: left;
+    margin-top: 45px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.Rate{
+    text-align: right;
+}
+
+.news{
+    float: left; 
+    margin-left: 20px;
+    margin-top: 63px;
+    width: 30%;
+    max-width: 370px;
+}
+
+#news-title{
+    font-family: arial;
+    font-size: 16px;
+}
+
+#search{
+    margin-left: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+button{
+    margin-top: 5px;
+}
+
+a{
+    display: block;
+    font-family: arial;
+    font-size: 14px;
+    margin-top: 12px;
+    margin-left: 3px;
+}
+
+@media (max-width: 1048px) {
+    .news{
+        margin-top: 500px;
+        margin-left: 0px;
+        width: 95%;
+        max-width: none;
+    }
+    button{
+    margin-top: 10px;
+    }
+    .content{
+        min-width: 544px;
+    }
+}

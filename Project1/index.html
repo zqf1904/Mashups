@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Currency Converter</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+	<div class="content">
+		<div class="Table">
+			<h1>Currency Converter</h1>
+			<h3>Find out how much your foreign currency is worth in U.S. dollars</h3>
+			<div class="Row">
+				<div class="Cell Title"></div>
+				<div class="Cell Title">Foreign amount</div>
+				<div class="Cell Title"></div>
+				<div class="Cell Title">Exchange rate</div>
+				<div class="Cell Title"></div>
+				<div class="Cell Title result">U.S. dollar amount</div>
+			</div>
+			<div class="Row">
+				<div class="Cell Flag"><img src="https://www.bankofamerica.com/content/images/ContextualSiteGraphics/Instructional/en_US/european_union.gif"><p>European Union</p></div>
+				<div class="Cell Input" ><input size="16" id="EURinput"></input><br><p class="Name">Euro (EUR)</p></div>
+				<div class="Cell">&times;</div>
+				<div class="Cell Rate" id="EUR"></div>
+				<div class="Cell">=</div>
+				<div class="Cell result"><input size="14" id="EURoutput"></input><br><p class="Name">(USD)</p></div>
+			</div>
+			<div class="Row">
+				<div class="Cell Flag"><img src="https://www.bankofamerica.com/content/images/ContextualSiteGraphics/Instructional/en_US/great_britain.gif"><p>Great Britain</p></div>
+				<div class="Cell Input" ><input size="16" id="GBPinput"></input><br><p class="Name">Great Britain Pound</p><p class="Name">Sterling (GBP)</p></div>
+				<div class="Cell">&times;</div>
+				<div class="Cell Rate" id="GBP"></div>
+				<div class="Cell">=</div>
+				<div class="Cell result"><input size="14" id="GBPoutput"></input><br><p class="Name">(USD)</p></div>
+			</div>
+			<div class="Row">
+				<div class="Cell Flag"><img src="https://www.bankofamerica.com/content/images/ContextualSiteGraphics/Instructional/en_US/canada.gif"><p>Canada</p></div>
+				<div class="Cell Input"><input size="16" id="CADinput"></input><br><p class="Name">Canadian Dollar (CAD)</p></div>
+				<div class="Cell">&times;</div>
+				<div class="Cell Rate" id="CAD"></div>
+				<div class="Cell">=</div>
+				<div class="Cell result"><input size="14" id="CADoutput"></input><br><p class="Name">(USD)</p></div>
+			</div>
+			<div class="Row">
+				<div class="Cell Flag"><img src="https://www.bankofamerica.com/content/images/ContextualSiteGraphics/Instructional/en_US/china.gif"><p>China</p></div>
+				<div class="Cell Input"><input size="16" id="CNYinput"></input><br><p class="Name">Chinese Renminbi</p><p class="Name">Yuan (CNY)</p></div>
+				<div class="Cell">&times;</div>
+				<div class="Cell Rate" id="CNY"></div>
+				<div class="Cell">=</div>
+				<div class="Cell result"><input size="14" id="CNYoutput"></input><br><p class="Name">(USD)</p></div>
+			</div>
+		</div>
+		<div id="date"></div>
+		<div class="ebay">
+			<p class="ebayc"><span class = "ebayT">Random electronics you can buy on ebay </span>(that price less than you enter)</p>
+			<button id = "search">Search</button>
+			<div id="ebay-content"></div>
+		</div>
+		<div class="news">
+			<b id="news-title"> Currency News in Past 14 days from NY Times</b><br>
+			<button id = "enews">Euro News</button>
+			<button id = "pnews">Pound News</button>
+			<button id = "cnews">CAD News</button>
+			<button id = "ynews">CNY News</button>
+			<button id = "anews">All Currency News</button>
+			<div id="news-container"></div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="scripts.js"></script>
+</body>
+</html>
